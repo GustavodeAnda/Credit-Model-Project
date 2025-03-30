@@ -100,8 +100,10 @@ def credit_utilization_score(usage_percent):
 
 def income_score(monthly_income):
     """Puntaje por ingresos mensuales, mínimo $400 USD (máximo 100 puntos)."""
-    if 400 <= monthly_income < 1000:
+    if 400 <= monthly_income < 700:
         return 40
+    elif 700 <= monthly_income < 1000:
+        return 50
     elif 1000 <= monthly_income < 2000:
         return 60
     elif 2000 <= monthly_income < 3000:
@@ -151,7 +153,7 @@ def evaluate_applicant(data):
         open_loans_score(data["open_loans"])
     )
     
-    threshold = 550
+    threshold = 600 # Umbral de aprobación
     decision = "Aprobado" if total_score >= threshold else "Rechazado"
     return total_score, decision
 
