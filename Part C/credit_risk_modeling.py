@@ -1,4 +1,11 @@
-
+# Modelo de Riesgo Crediticio
+# Autores: [Daniel Sánchez & Ana Luisa Espinoza & Gustavo de Anda]
+# Fecha: 31 de marzo de 2025
+# Descripción: Modelo de riesgo que expande el scorecard tradicional de la Parte A,
+# el modelo calcula métricas de riesgo como:
+# - Probability of Default (PD)
+# - Loss Given Default (LGD)
+# - Exposure at Default (EAD)
 
 import random
 import numpy as np
