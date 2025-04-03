@@ -3,6 +3,7 @@
 # Fecha: 31 de marzo de 2025
 # Descripción: Modelo de riesgo que expande el scorecard tradicional de la Parte A,
 # Mediante una Red Neuronal obtiene la probabilidad de incumplimiento
+# (PD) y la pérdida esperada (EL) de un cliente.
 
                                                                 # el modelo calcula métricas de riesgo como:
                                                                 # - Probability of Default (PD)
